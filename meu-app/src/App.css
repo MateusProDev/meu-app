@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: blue;
+}
