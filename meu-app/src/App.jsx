@@ -1,4 +1,5 @@
 import './App.css'
+import ChallengeComponents from './components/ChallengeComponents'
 import EventsComponents from './components/EventsComponents'
 import FirstComponents from './components/FirstComponents'
 
@@ -9,6 +10,7 @@ function App() {
       <p>Aqui é um projeto em React</p>
       <FirstComponents />
       <EventsComponents />
+      <ChallengeComponents />
     </>
   )
 }

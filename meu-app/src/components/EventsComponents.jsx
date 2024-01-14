@@ -1,7 +1,5 @@
 const EventsComponents = () => {
-    const handleEvent = (e) => {
-        console.log(e)
-
+    const handleEvent = () => {
         console.log('Enviado!');
     };
 
@@ -9,6 +7,9 @@ const EventsComponents = () => {
         <div>
             <div>
                 <button onClick={handleEvent}>Enviar</button>
+            </div>
+            <div>
+                <button onClick={() => console.log('Enviado!')}>Enviar</button>
             </div>
         </div>
     );
