@@ -1,17 +1,23 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 const ListRender = () => {
-  const [list] = useState(["Mateus", "Lais", "Benjamin"]);
+    const [users] = useState([
+        { id: 7, name: "Mateus", age: 25 },
+        { id: 77, name: "Lais", age: 23 },
+        { id: 777, name: "Benjamin", age: 0.6 },
+    ]);
 
   return (
     <>
         <ul>
-            {list.map((item, i) => (
-                <li key={i}>{item}</li>
+            {users.map((user) => (
+                <li key={user.id}>
+                    {user.name} - {user.age}
+                </li>
             ))}
         </ul>
     </>
-  )
-}
+  );
+};
 
 export default ListRender;
